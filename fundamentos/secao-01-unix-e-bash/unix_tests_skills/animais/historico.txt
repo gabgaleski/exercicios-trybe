@@ -1,0 +1,5 @@
+  546  clear
+  547  who tail -3
+  548  history tail -3
+  549  history | tail -3
+  550  history | tail -5 | cat > historico.txt
