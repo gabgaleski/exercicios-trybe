@@ -1,0 +1,48 @@
+ol li {
+    background-color: yellow;
+}
+.par {
+    color: green;
+}
+.impar {
+    text-transform: uppercase;
+}
+h1, h3 {
+    color: red;
+}
+h1 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: 600;
+}
+.prog-list {
+    color: blue;
+}
+.java {
+    background-color: pink;
+}
+.stack:hover {
+    font-weight: 600;
+    color: orange;
+}
+.school:hover {
+    font-weight: 600;
+    color: green;
+}
+.mdn:hover {
+    font-weight: 600;
+    color: black;
+}
+.dev:hover {
+    font-weight: 600;
+    color: yellow;
+}
+.trybe:hover {
+    font-weight: 600;
+    color: green;
+}
