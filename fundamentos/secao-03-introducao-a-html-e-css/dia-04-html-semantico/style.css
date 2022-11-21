@@ -9,7 +9,7 @@ h1 {
     text-align: center;
     width: 200px;
     display: block;
-    margin-left: 200px;
+    margin-left: 45%;
   }
 
   .second {
@@ -33,7 +33,6 @@ h1 {
     text-align: center;
 }
 .list {
-    margin-left: 40%;
     list-style: none;
 }
 .premium-list {
