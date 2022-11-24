@@ -1,8 +1,8 @@
 let valor = -1;
 if (valor > 0) {
-    console.log("Positive")
+   return console.log("Positive")
 } else if (valor == 0) {
-    console.log("Zero")
+   return console.log("Zero")
 } else {
-    console.log("Negative")
+   return console.log("Negative")
 }
