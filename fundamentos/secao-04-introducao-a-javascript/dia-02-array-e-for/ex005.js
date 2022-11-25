@@ -21,6 +21,16 @@ let valoresImpares = 0;
  for (let impar of numbers) {
     if (impar % 2 === 1) {
         valoresImpares += 1;
+    } else if (valoresImpares === 0) {
+        console.log("Nenhum valor encontrado")
     }
  }
  console.log(`Quantidade de valores impares na array: ${valoresImpares}`)
+
+ let valorMenor = 200;
+ for (let menorValor of numbers) {
+    if (menorValor < valorMenor) {
+        valorMenor = menorValor;
+    }
+ }
+ console.log(valorMenor)
