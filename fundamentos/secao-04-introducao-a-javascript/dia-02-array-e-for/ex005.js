@@ -3,4 +3,5 @@ let soma = 0;
 for (let index of numbers) {
     soma = soma + index;
 }
-console.log(soma)
+let mediaAr = soma / numbers.length
+console.log(mediaAr)
