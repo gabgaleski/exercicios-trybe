@@ -13,7 +13,14 @@ if (mediaAr > 20) {
 let valor = 1;
 for (let maiorValor of numbers) {
     if (maiorValor > valor) {
-        valor = maiorValor
+        valor = maiorValor;
     }
 }
- console.log(valor)
+ console.log(`Maior valor da Array: ${valor}`)
+let valoresImpares = 0;
+ for (let impar of numbers) {
+    if (impar % 2 === 1) {
+        valoresImpares += 1;
+    }
+ }
+ console.log(`Quantidade de valores impares na array: ${valoresImpares}`)
