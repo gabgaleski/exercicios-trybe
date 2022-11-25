@@ -40,3 +40,8 @@ let valoresImpares = 0;
     arr.push(add)
  }
  console.log(arr)
+
+ for (let divid of arr) {
+    let divisao = divid / 2
+    console.log(divisao)
+ }
