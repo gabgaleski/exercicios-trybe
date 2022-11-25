@@ -10,3 +10,10 @@ if (mediaAr > 20) {
 } else {
     console.log('Valor menor que 20')
 }
+let valor = 1;
+for (let maiorValor of numbers) {
+    if (maiorValor > valor) {
+        valor = maiorValor
+    }
+}
+ console.log(valor)
