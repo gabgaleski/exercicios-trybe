@@ -33,4 +33,10 @@ let valoresImpares = 0;
         valorMenor = menorValor;
     }
  }
- console.log(valorMenor)
+ console.log(`O menor valor da Array é: ${valorMenor}`);
+
+ let arr = [];
+ for (let add = 1; add <= 25; add += 1) {
+    arr.push(add)
+ }
+ console.log(arr)
