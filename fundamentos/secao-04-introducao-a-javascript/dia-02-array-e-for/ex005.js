@@ -4,4 +4,9 @@ for (let index of numbers) {
     soma = soma + index;
 }
 let mediaAr = soma / numbers.length
-console.log(mediaAr)
+console.log(`A media Aritmética é de: ${mediaAr}`)
+if (mediaAr > 20) {
+    console.log('Valor maior que 20!')
+} else {
+    console.log('Valor menor que 20')
+}
