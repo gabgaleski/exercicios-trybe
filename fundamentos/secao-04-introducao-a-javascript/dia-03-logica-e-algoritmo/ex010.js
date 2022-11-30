@@ -4,8 +4,8 @@ let controlLeft = middle;
 let controlRight = middle;
 let symbol = '*';
 let outputLine = '';
-for (let line = 0; line <= middle; line += 1) {
-    for (let col = 0; col <= n; col += 1) {
+for (let line = 1; line <= middle; line += 1) {
+    for (let col = 1; col <= n; col += 1) {
         if (col == controlLeft || col == controlRight || line == middle) {
             outputLine += symbol;
         } else {
