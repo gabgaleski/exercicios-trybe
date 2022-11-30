@@ -3,10 +3,14 @@ function verify(name) {
     reverseName = reverseName.reverse();
     reverseName = reverseName.join('');
     if (name === reverseName) {
-        return true
-    } else 
+        console.log('True');
+        return true;
+    } else {
+        console.log('False');
+        return false;
+    }
     
     console.log(reverseName);
 }
 
-verify('Joao')
+verify('arara')
