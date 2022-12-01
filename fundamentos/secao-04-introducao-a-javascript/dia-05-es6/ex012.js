@@ -10,4 +10,17 @@ const substituaX = (nome) => {
     return resultado
 }
 
-console.log(substituaX('Gabriel'));
+//substituaX('Gabriel');
+
+const minhasSkills = (func) => {
+    const skills = ['JavaScript', 'HTML', 'CSS'];
+    let res = `
+    ${func}
+    Minhas tres principais habilidades sao:
+    ${skills[0]}
+    ${skills[1]}
+    ${skills[2]}`
+return res
+}
+
+console.log(minhasSkills(substituaX('Gabriel')));
