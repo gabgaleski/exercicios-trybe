@@ -4,4 +4,4 @@ const circleArea = (raio) => {
     return area
 }
 
-console.log(circleArea(5))
+console.log(`A aréa do circulo é de ${circleArea(5)}`)
