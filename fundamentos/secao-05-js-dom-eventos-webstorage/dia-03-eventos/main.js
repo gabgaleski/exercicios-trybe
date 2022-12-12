@@ -7,13 +7,27 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 // - Copie esse arquivo e edite apenas ele;
 //  - Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
-
+"Pois ele esta com a class tech, onde no css ela recebe uma transform sobindo o quadrado"
 // - Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
+const handleChangeTech = (event) => {
+    const techElement = document.querySelector('.tech');
+    techElement.classList.remove('tech');
+    event.target.classList.add('tech');
+    input.value = '';
+  }
+  
+  firstLi.addEventListener('click', handleChangeTech);
+  secondLi.addEventListener('click', handleChangeTech);
+  thirdLi.addEventListener('click', handleChangeTech);
 //  - Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
-
+const changeText = () => {
+const element = document.querySelector('.tech');
+element.value = input;
+}
+input.addEventListener('keypress', changeText)
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
