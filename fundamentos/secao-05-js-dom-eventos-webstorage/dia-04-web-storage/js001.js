@@ -1,7 +1,7 @@
 const backGround = document.getElementById('background-color');
 const colorBtn = document.getElementsByClassName('colorBtn');
 const fontColor = document.getElementsByClassName('fontColor');
-
+const sizeF = document.getElementsByClassName('size-font');
 const setBackground = (color) => {
 let content = document.getElementsByClassName("body")[0];
 content.style.backgroundColor = color;
@@ -17,7 +17,7 @@ for (let index = 0; index < colorBtn.length; index += 1) {
 ///////////////////////////////////////////////////////////////
 
 const setFont = (color) => {
-    let text = document.getElementsByClassName('paragraph');
+    const text = document.getElementsByClassName('paragraph');
     for (let index = 0; index < text.length; index += 1){
         text[index].style.color = color;
     }
@@ -29,3 +29,21 @@ for (let index1 = 0; index1 < fontColor.length; index1 += 1) {
         setFont(event.target.innerHTML);
     })
 }
+
+///////////////////////////////////////////////////////////////
+
+const fontSize = (size) => {
+    const text = document.getElementsByClassName('paragraph');
+    for (let index = 0; index < text.length; index += 1) {
+        text[index].style.fontSize = size;
+    }
+    localStorage.setItem('fontSize', size);
+}
+
+for (let index = 0; index < sizeF.length; index += 1) {
+    sizeF[index].addEventListener('click', (event) => {
+        fontSize(event.target.innerHTML);
+    })
+}
+
+//////////////////////////////////////////////////////////
