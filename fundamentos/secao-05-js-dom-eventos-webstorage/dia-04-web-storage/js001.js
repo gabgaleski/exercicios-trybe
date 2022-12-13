@@ -2,6 +2,10 @@ const backGround = document.getElementById('background-color');
 const colorBtn = document.getElementsByClassName('colorBtn');
 const fontColor = document.getElementsByClassName('fontColor');
 const sizeF = document.getElementsByClassName('size-font');
+const height = document.getElementsByClassName('height');
+
+
+
 const setBackground = (color) => {
 let content = document.getElementsByClassName("body")[0];
 content.style.backgroundColor = color;
@@ -47,3 +51,21 @@ for (let index = 0; index < sizeF.length; index += 1) {
 }
 
 //////////////////////////////////////////////////////////
+// Espaçãmento entre as linhas do texto
+
+const lineSpace = (space) => {
+    const text = document.getElementsByClassName('paragraph');
+    for (let index = 0; index < text.length; index += 1) {
+        text[index].style.lineHeight = space;
+    }
+    localStorage.setItem('lineHeight', space);
+}
+
+for (let index = 0; index < height.length; index += 1) {
+    height[index].addEventListener('click', (event) => {
+        lineSpace(event.target.innerHTML);
+    })
+}
+
+/////////////////////////////////////////////////////
+
