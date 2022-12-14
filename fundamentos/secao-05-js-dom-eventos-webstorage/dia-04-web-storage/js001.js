@@ -3,6 +3,7 @@ const colorBtn = document.getElementsByClassName('colorBtn');
 const fontColor = document.getElementsByClassName('fontColor');
 const sizeF = document.getElementsByClassName('size-font');
 const height = document.getElementsByClassName('height');
+const typeFont = document.getElementsByClassName('typeFont');
 
 
 
@@ -69,3 +70,16 @@ for (let index = 0; index < height.length; index += 1) {
 
 /////////////////////////////////////////////////////
 
+const fontFamily = (font) => {
+    const text = document.getElementsByClassName('paragraph');
+    for (let index = 0; index < text.length; index += 1) {
+        text[index].style.fontFamily = font;
+    }
+    localStorage.setItem('fontFamily', font);
+}
+
+for (let index = 0; index < typeFont.length; index += 1) {
+    typeFont[index].addEventListener('click', (event) => {
+        fontFamily(event.target.innerHTML);
+    })
+}
