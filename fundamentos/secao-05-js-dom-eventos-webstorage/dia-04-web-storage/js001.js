@@ -1,10 +1,9 @@
-const backGround = document.getElementById('background-color');
+window.onload = () => {
 const colorBtn = document.getElementsByClassName('colorBtn');
 const fontColor = document.getElementsByClassName('fontColor');
 const sizeF = document.getElementsByClassName('size-font');
 const height = document.getElementsByClassName('height');
 const typeFont = document.getElementsByClassName('typeFont');
-
 
 
 const setBackground = (color) => {
@@ -82,4 +81,36 @@ for (let index = 0; index < typeFont.length; index += 1) {
     typeFont[index].addEventListener('click', (event) => {
         fontFamily(event.target.innerHTML);
     })
+    }
+
+    const save = () => {
+        if (localStorage.getItem('backgroundcolor')) {
+            let content = document.getElementsByClassName("body")[0];
+            content.style.backgroundColor = localStorage.getItem('backgroundcolor');
+        }
+
+        let fontColor = localStorage.getItem('fontColor');
+        if (fontColor) {
+            setFont(fontColor)
+        }
+
+        let fontSizes = localStorage.getItem('fontSize');
+        if(fontSizes) {
+            fontSize(fontSizes);
+        }
+        
+        let space = localStorage.getItem('lineHeight');
+        if(space) {
+            lineSpace(space);
+        }
+
+        let fontF = localStorage.getItem('fontFamily')
+        if(fontF) {
+            fontFamily(fontF);
+        }
+    }
+    save();
+
+
+
 }
