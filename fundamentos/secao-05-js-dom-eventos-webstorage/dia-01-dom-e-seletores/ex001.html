@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Desafio - JavaEscripito</h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+    document.getElementsByTagName('p')[1].innerHTML = 'Trabalhando em algum lugar fora do brasil como desenvolvedor';
+    const colorChange = document.getElementsByClassName('main-content');
+    for (let index = 0; index < colorChange.length; index += 1) {
+        colorChange[index].style.backgroundColor = 'rgb(76,164,109)'
+    }
+    const colorChange2 = document.getElementsByClassName('center-content');
+    for (let index2 = 0; index2 < colorChange2.length; index2 += 1) {
+        colorChange2[index2].style.backgroundColor = 'white'
+    }
+    document.getElementsByTagName('h1')[0].innerText = 'Desafio - JavaScript'
+    document.getElementsByTagName('p')[0].innerText = 'TEXTO PADRAO DO NOSSO SITE';
+    const paragraphUpperCase = () => {
+  let paragraph = document.getElementsByTagName('p')[0];
+  paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+}
+paragraphUpperCase();
+const showParagraphs = () => {
+  let paragraphs = document.getElementsByTagName('p');
+  for (let index = 0; index < paragraphs.length; index += 1) {
+    console.log(paragraphs[index].innerHTML);
+  }
+}
+showParagraphs();
+    </script>
+  </body>
+</html>
